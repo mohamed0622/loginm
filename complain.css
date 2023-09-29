@@ -1,0 +1,133 @@
+@import url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif ;
+}
+p{
+    color: #fff;
+}
+
+    
+
+.contacta{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url(https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.contacta  .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contacta  .content h2{
+font: size 36px; 
+font-weight: 500;
+color: #fff;
+}
+.contacta  .content p{
+
+    font-weight: 500;
+    font-size: xx-large;
+    color: #fff;
+    border: none;
+    border-bottom: #333 5px solid;
+    border-radius: 10px;
+
+
+    }
+
+.contactform{
+width: 75%;
+padding: 60px;
+background: transparent;
+align-content:center;
+border: rgb(216, 171, 87) solid 7px;
+border-radius:10px ;
+}
+.contactform h2{
+    font-size: 30px;
+    color: antiquewhite;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position:relative ;
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid antiquewhite;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+.contactform .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: antiquewhite;
+
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+color: #e91e63;
+font: size 12px; 
+transform: translate(-20 px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    color:antiquewhite;
+    background: rgb(197, 161, 94);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+     font-size: 18px;
+}
+@media(max-width:991px)
+{
+    .contacta{
+        padding: 50px;
+
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+.ml{
+    background-color: rgb(189, 150, 78) ;
+    border: solid antiquewhite 2px;
+    text-decoration: none;
+    font-size: large;
+    color: antiquewhite;
+    border-radius: 15px;
+}

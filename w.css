@@ -1,0 +1,216 @@
+@import url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif ;
+}
+body{
+    display: grid;
+    grid-template-areas: "head head head"
+    "side content content"
+    "foot foot foot"
+    ;
+
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/381/165/306/simple-background-black-background-minimalism-digital-art-wallpaper-preview.jpg);
+}
+p{
+    color:antiquewhite;
+}
+.br{
+    border: transparent;
+    border-radius: 10px;
+   
+}
+
+
+.contacta{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: head;
+    
+}
+.contacta  .content{
+    max-width: 800px;
+    text-align: center;
+    color: antiquewhite;
+}
+.contacta  .content h2{
+font: size 36px; 
+font-weight: 500;
+color:antiquewhite;
+border: aqua 3px solid;
+border-radius: 20px;
+}
+.contacta  .content p{
+
+    font-weight: 300;
+    color: antiquewhite;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-bottom: #00bcd4 dashed 2px;
+    
+    }
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   
+    margin: 30px;
+    grid-area: side;
+
+}
+.container .info{
+width: 100%;
+display: flex;
+flex-direction: column ;
+justify-content: space-around space-between;
+color: antiquewhite;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    border: #00bcd4 solid 3px;
+    border-radius: 20px;
+    justify-content: space-between space-around ;
+}
+.container .contactinfo .box.icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    align-items: center;
+    justify-content: center space-between space-around;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin: left 20px; 
+    font-size:16px;
+    color: antiquewhite;
+    flex-direction: column;
+    font-weight: 300;
+    justify-content: space-between;
+}
+.container .contactinfo .box .text h3{
+  
+    color: #00bcd4;
+
+    font-weight: 500;
+}
+.contactform{
+width: 100%;
+padding: 40px;
+background:white;
+align-content:center;
+display: grid;
+justify-content: center;
+height: 80%;
+border: #00bcd4 5px solid;
+border-radius: 10px;
+grid-area: content;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position:relative ;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid#333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+color: aqua;
+font: size 12px; 
+transform: translate(-20 px);
+}
+.contactform .sb{
+    width: 100%;
+    color:#fff;
+    background: #00bcd4;
+    border: black 2px solid;
+    border-radius: 45px;
+    cursor: pointer;
+    padding: 10px;
+     font-size: 18px;
+}
+@media(max-width:991px)
+{
+    .contacta{
+        padding: 50px;
+
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+.hk{
+    color: #00bcd4;
+    display: flex;
+    justify-content: space-between;
+}
+.hm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-items: right;
+}
+.back{
+    text-decoration: none;
+    border:black 3px solid;
+    font-size: larger;
+    color: aqua;
+    background-color:black;
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+}
